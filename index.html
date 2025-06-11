@@ -12,7 +12,6 @@
         <div style="width:100%;height:100%;max-width:100%">
             <div id="game"></div>
         </div>
-        <script src='gameData.js'></script>
         <script>
             EJS_player = '#game';
             EJS_core = 'arcade';
@@ -21,7 +20,27 @@
             EJS_startOnLoaded = true;
             EJS_threads = true;
             EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
-            EJS_gameUrl = new Blob([Uint8Array.from(atob(window.gameData), (m) => m.codePointAt(0))]);
+            EJS_gameUrl = 'https://juegoschromeosflex.github.io/los-simpson-arcade/simpsons2pj.zip';
+            EJS_Buttons = {
+    playPause: false,
+    restart: false,
+    mute: false,
+    settings: false,
+    fullscreen: false,
+    saveState: false,
+    loadState: false,
+    screenRecord: false,
+    gamepad: false,
+    cheat: false,
+    volume: false,
+    saveSavFiles: false,
+    loadSavFiles: false,
+    quickSave: false,
+    quickLoad: false,
+    screenshot: false,
+    cacheManager: false,
+    exitEmulation: false
+            }
         </script>
         <script src='https://cdn.emulatorjs.org/stable/data/loader.js'></script>
     </body>
