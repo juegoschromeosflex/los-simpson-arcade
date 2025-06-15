@@ -13,13 +13,15 @@
             <div id="game"></div>
         </div>
         <script>
-            EJS_player = '#game';
-            EJS_core = 'fbneo';
-            EJS_gameName = 'Los Simpson Arcade';
-            EJS_color = '#EBBE00';
-            EJS_startOnLoaded = false;
-            EJS_pathtodata = 'https://cdn.emulatorjs.org/nightly/data/';
-            EJS_gameUrl = 'https://juegoschromeosflex.github.io/los-simpson-arcade/simpsons2pj.zip';
+            EJS_player = "#game";
+            EJS_core = "arcade";
+            EJS_gameName = "simpsonarcade";
+            EJS_color = "#EBBE00";
+            EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+            EJS_gameUrl = "simpsons2pj.zip";
+            EJS_backgroundBlur = true;
+            EJS_backgroundImage = "https://juegoschromeosflex.github.io/los-simpson-arcade/gamecover.png";
+            EJS_startButtonName = "Jugar Los Simpson Arcade";
             EJS_Buttons = {
                 playPause: false,
                 restart: false,
@@ -39,220 +41,73 @@
                 screenshot: false,
                 cacheManager: false,
                 exitEmulation: false
-            }
-            EJS_language = 'es-ES';
-            EJS_threads = true
+            };
             EJS_defaultOptions = {
-                'shader':'bicubic'
-            }
-            EJS_backgroundBlur = true
-            EJS_backgroundImage = 'https://juegoschromeosflex.github.io/los-simpson-arcade/gamecover.png'
-            EJS_startButtonName = "Jugar Los Simpson Arcade"
+                "shader":"bicubic"
+            };
             EJS_defaultControls = {
-        0: {
-            0: {
-                'value': 'tab',
-                'value2': 'BUTTON_2'
-            },
-            1: {
-            },
-            2: {
-                'value': 'c',
-                'value2': 'SELECT'
-            },
-            3: {
-                'value': 'enter',
-                'value2': 'START'
-            },
-            4: {
-                'value': 'up arrow',
-                'value2': 'DPAD_UP'
-            },
-            5: {
-                'value': 'down arrow',
-                'value2': 'DPAD_DOWN'
-            },
-            6: {
-                'value': 'left arrow',
-                'value2': 'DPAD_LEFT'
-            },
-            7: {
-                'value': 'right arrow',
-                'value2': 'DPAD_RIGHT'
-            },
-            8: {
-                'value': 'space',
-                'value2': 'BUTTON_1'
-            },
-            9: {
-            },
-            10: {
+                0: {
+                    0: {
+                        "value": "z",
+                        "value2": "BUTTON_2"
+                    },
+                    2: {
+                        "value": "backspace",
+                        "value2": "SELECT"
+                    },
+                    3: {
+                        "value": "enter",
+                        "value2": "START"
+                    },
+                    4: {
+                        "value": "up arrow",
+                        "value2": "DPAD_UP"
+                    },
+                    5: {
+                        "value": "down arrow",
+                        "value2": "DPAD_DOWN"
+                    },
+                    6: {
+                        "value": "left arrow",
+                        "value2": "DPAD_LEFT"
+                    },
+                    7: {
+                        "value": "right arrow",
+                        "value2": "DPAD_RIGHT"
+                    },
+                    8: {
+                        "value": "x",
+                        "value2": "BUTTON_1"
+                    }
                 },
-            11: {
-                },
-            12: {
-                },
-            13: {
-                },
-            14: {
-                },
-            15: {
-                },
-            16: {
-                },
-            17: {
-                },
-            18: {
-                },
-            19: {
-                },
-            20: {
-                },
-            21: {
-                },
-            22: {
-                },
-            23: {
-                },
-            24: {
-                },
-            25: {
-                },
-            26: {
-                },
-            27: {
-                },
-            28: {
-                },
-            29: {
-                },
-        },
-        1: {
-                        0: {
-                'value2': 'BUTTON_2'
-            },
-            1: {
-            },
-            2: {
-                'value2': 'SELECT'
-            },
-            3: {
-                'value2': 'START'
-            },
-            4: {
-                'value2': 'DPAD_UP'
-            },
-            5: {
-                'value2': 'DPAD_DOWN'
-            },
-            6: {
-                'value2': 'DPAD_LEFT'
-            },
-            7: {
-                'value2': 'DPAD_RIGHT'
-            },
-            8: {
-                'value2': 'BUTTON_1'
-            },
-            9: {
-            },
-            10: {
-                },
-            11: {
-                },
-            12: {
-                },
-            13: {
-                },
-            14: {
-                },
-            15: {
-                },
-            16: {
-                },
-            17: {
-                },
-            18: {
-                },
-            19: {
-                },
-            20: {
-                },
-            21: {
-                },
-            22: {
-                },
-            23: {
-                },
-            24: {
-                },
-            25: {
-                },
-            26: {
-                },
-            27: {
-                },
-            28: {
-                },
-            29: {
-                },
-        },
-        2: {},
-        3: {}
-            }
-            EJS_VirtualGamepadSettings = [
-    {
-        type: "button",
-        text: "2",
-        id: "b",
-        location: "right",
-        left: 81,
-        top: 40,
-        bold: true,
-        input_value: 8
-    },
-    {
-        type: "button",
-        text: "1",
-        id: "a",
-        location: "right",
-        left: 40,
-        top: 80,
-        bold: true,
-        input_value: 0
-    },
-    //Note- the dpad and the zone will overlap in this example, this is just to show what it should look like.
-    {
-        type: "dpad",
-        location: "left",
-        left: "50%",
-        right: "50%",
-        joystickInput: false,
-        inputValues: [4, 5, 6, 7]
-    },
-    {
-        type: "button",
-        text: "Start",
-        id: "start",
-        location: "center",
-        left: 60,
-        fontSize: 15,
-        block: true,
-        input_value: 3
-    },
-    {
-        type: "button",
-        text: "Coin",
-        id: "select",
-        location: "center",
-        left: -5,
-        fontSize: 15,
-        block: true,
-        input_value: 2
-    }
-]
-            
+                1: {
+                    0: {
+                        "value2": "BUTTON_2"
+                    },
+                    2: {
+                        "value2": "SELECT"
+                    },
+                    3: {
+                        "value2": "START"
+                    },
+                    4: {
+                        "value2": "DPAD_UP"
+                    },
+                    5: {
+                        "value2": "DPAD_DOWN"
+                    },
+                    6: {
+                        "value2": "DPAD_LEFT"
+                    },
+                    7: {
+                        "value2": "DPAD_RIGHT"
+                    },
+                    8: {
+                        "value2": "BUTTON_1"
+                    }
+                }
+            };
         </script>
-        <script src="https://cdn.emulatorjs.org/nightly/data/loader.js"></script>
+        <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
 </html>
