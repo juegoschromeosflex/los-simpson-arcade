@@ -15,36 +15,36 @@
         <script>
             EJS_player = "#game";
             EJS_core = "arcade";
-            EJS_gameName = "simpsonarcade";
+            EJS_gameName = "los-simpson-arcade";
             EJS_color = "#EBBE00";
             EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
-            EJS_gameUrl = "simpsons2pj.zip";
-            EJS_backgroundBlur = true;
+            EJS_gameUrl = "https://juegoschromeosflex.github.io/los-simpson-arcade/simpsons2pj.zip";
+            EJS_threads = true
+            EJS_backgroundBlur = true
             EJS_backgroundImage = "https://juegoschromeosflex.github.io/los-simpson-arcade/gamecover.png";
             EJS_startButtonName = "Jugar Los Simpson Arcade";
             EJS_Buttons = {
-                playPause: false,
-                restart: false,
-                mute: false,
-                settings: false,
-                fullscreen: true,
-                saveState: false,
-                loadState: false,
-                screenRecord: false,
-                gamepad: false,
-                cheat: false,
-                volume: false,
-                saveSavFiles: false,
-                loadSavFiles: false,
-                quickSave: false,
-                quickLoad: false,
-                screenshot: false,
-                cacheManager: false,
-                exitEmulation: false
-            };
+                playPause: { visible: false },
+                restart: { visible: false },
+                mute: { visible: false },
+                settings: { visible: false },
+                saveState: { visible: false },
+                loadState: { visible: false },
+                screenRecord: { visible: false },
+                gamepad: { visible: false },
+                cheat: { visible: false },
+                volume: { visible: false },
+                saveSavFiles: { visible: false },
+                loadSavFiles: { visible: false },
+                quickSave: { visible: false },
+                quickLoad: { visible: false },
+                screenshot: { visible: false },
+                cacheManager: { visible: false },
+                exitEmulation: { visible: false }
+            }
             EJS_defaultOptions = {
-                "shader":"bicubic"
-            };
+                'shader':'bicubic'
+            }
             EJS_defaultControls = {
                 0: {
                     0: {
@@ -106,7 +106,7 @@
                         "value2": "BUTTON_1"
                     }
                 }
-            };
+            }
         </script>
         <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
     </body>
